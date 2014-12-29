@@ -500,7 +500,7 @@
         "$url-field-selector": null
       }
     },
-    "get-membership-detail": {
+    "get-membership-details": {
       "url": "/people/~/group-memberships/:group-id",
       "doc-url": "https://developer.linkedin.com/documents/groups-api#membergroups",
       "method": "GET",
@@ -635,12 +635,11 @@
         "$url-field-selector": null
       }
     },
-   "get-posts-comments": {
+   "get-post-comments": {
       "url": "/posts/:post-id/comments",
       "doc-url": "https://developer.linkedin.com/documents/groups-api#post",
       "method": "GET",
-      "params": {
-        "$group-id": null,
+      "params": {        
         "$post-id": null,
         "$start": null,
         "$count": null,        

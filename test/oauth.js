@@ -123,12 +123,16 @@ app.get('/people', function (req, res) {
       "start": 0,
       "count": 5}, cb);    
   };
+  var search = function(cb) {
+    testFnTmpl(linkedin.people.search, { "keywords": 'darul is here or not'}, cb);    
+  };
   q.defer(ignoreError, peopleCurrent);
   q.defer(ignoreError, peopleMemberById);
   q.defer(ignoreError, peopleMemberByUrl);
   q.defer(ignoreError, peopleCurrentConnections);  
   q.defer(ignoreError, peopleMemberConnectionsById);
-  q.defer(ignoreError, peopleMemberConnectionsByUrl);  
+  q.defer(ignoreError, peopleMemberConnectionsByUrl);
+  q.defer(ignoreError, search);  
   q.awaitAll(function(error, results) {     
     if (error)
       res.json(error);
@@ -150,7 +154,7 @@ app.get('/groups', function (req, res) {
       "url-field-selector": ":(group:(id,name,posts;count=5,site-group-url))"}, cb);     
   };
   var groupsCurrentMembershipSettings = function(cb) {      
-    testFnTmpl(linkedin.groups.getMembershipDetail, { "group-id": "12435",          
+    testFnTmpl(linkedin.groups.getMembershipDetails, { "group-id": "12435",          
       "url-field-selector": ":(show-group-logo-in-profile,email-digest-frequency,email-announcements-from-managers,allow-messages-from-members,email-for-every-new-post)"}, cb);           
   };
   var groupsOne = function(cb) {
@@ -190,13 +194,22 @@ app.get('/groups', function (req, res) {
     }, cb);     
   };
   var deleteOne = function(cb) {
-    testFnTmpl(linkedin.groups.remove, { "group-id": "12435"  }, cb);    
+    testFnTmpl(linkedin.groups.remove, { "group-id": "12435"}, cb);    
   };
   var getPosts = function(cb) {
-    testFnTmpl(linkedin.groups.getPosts, { "group-id": "12435"  }, cb);   
+    testFnTmpl(linkedin.groups.getPosts, { "group-id": "12435", start:0, count:5}, cb);   
+  };
+  var getPost = function(cb) {
+    testFnTmpl(linkedin.groups.getPost, { "post-id": "12435"}, cb);   
+  };
+  var getPostComments = function(cb) {
+    testFnTmpl(linkedin.groups.getPostComments, { "post-id": "12435", start:0,count:5}, cb);   
+  };
+  var getComment = function(cb) {
+    testFnTmpl(linkedin.groups.getComment, { "comment-id": "12435"}, cb);   
   };
   var getMembershipPosts = function(cb) {
-    testFnTmpl(linkedin.groups.getMembershipPosts, { "group-id": "12435"  }, cb);    
+    testFnTmpl(linkedin.groups.getMembershipPosts, { "group-id": "12435", start:0, count:5}, cb);    
   };
   var getSuggestionPosts = function(cb) {
     testFnTmpl(linkedin.groups.getSuggestionPosts, { "group-id": "12435"  }, cb);
@@ -222,6 +235,9 @@ app.get('/groups', function (req, res) {
   q.defer(ignoreError, updateOneFull);
   q.defer(ignoreError, deleteOne);
   q.defer(ignoreError, getPosts);
+  q.defer(ignoreError, getPost);
+  q.defer(ignoreError, getPostComments);
+  q.defer(ignoreError, getComment);
   q.defer(ignoreError, getMembershipPosts);
   q.defer(ignoreError, getSuggestionPosts);
   q.defer(ignoreError, addPost); 
