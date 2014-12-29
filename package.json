@@ -1,0 +1,33 @@
+{
+    "name" : "node-linkedin",
+    "version" : "0.0.1",
+    "description" : "NodeJS wrapper for the LinkedIn API",
+    "author": "Julien Valéry <darul75@gmail.com>",
+    "contributors": [        
+    ],
+    "homepage": "https://github.com/darul75/node-linkedin",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/darul75/node-linkedin.git"
+    },
+    "engine" : {
+        "node": ">=0.4.0"
+    },
+    "devDependencies": {
+        "oauth": "~0.9.7",
+        "optimist": "~0.6.0",
+        "mocha": "2.0.1",
+        "expect.js": "0.2.0",
+        "express": "3.4.0",
+        "supertest": "0.8.1",
+        "grunt": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-uglify": "latest",
+        "queue-async": "1.0.7"
+    },
+    "main" : "index.js",    
+    "licenses": [{
+        "type": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }]
+}
