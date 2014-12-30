@@ -22,12 +22,21 @@ npm install node-linked-in
 ```javascript
 var Linkedin = require('node-linked-in');
 
-var linkedin = new Linkedin({
-  version: "1",
-  pathPrefix:"v1"
-});
+var cfg = {version: "1", pathPrefix:"v1"};
 
-// oauth auth, yoy might use https://github.com/ciaranj/node-oauth
+/* proxy example
+var config = {
+  version: "1",
+  pathPrefix:"v1",
+  proxy: {
+    host: 127.0.0.1,
+    port: 8083
+  }
+}*/
+
+var linkedin = new Linkedin(cfg);
+
+// Oauth2 auth, yoy might use https://github.com/ciaranj/node-oauth
 
 // store info
 linkedin.authenticate({
@@ -44,9 +53,18 @@ linkedin.people.getCurrent({
     
 ## Options    
 
-TODO
+- **version** : 1 only. TODO: set it by default
+- **pathPrefix** : v1 only. TODO: set it by default
+- **proxy**: hash object
 
-- **TODO** : TODO.
+```json
+proxy = {
+  port: 8083,
+  host: 127.0.0.1
+}
+```
+
+Whether process.env.HTTPS_PROXY or process.env.HTTP_PROXY are set, providing hash proxy is not needed.
 
 ## Metrics
 
