@@ -3,12 +3,13 @@ var Url = require("url");
 var querystring = require("querystring");
 var queue = require("queue-async");
 
-var Client = require("../index");
+var Linkedin = require("../index");
 var OAuth2 = require("oauth").OAuth2;
 
-var linkedin = new Client({
+var linkedin = new Linkedin({
   version: "1",
-  pathPrefix:"v1"  
+  pathPrefix:"v1",
+  debug: true  
 });
 
 // var linkedin = new Client({
@@ -23,12 +24,12 @@ var linkedin = new Client({
 var clientId = "7782fkexleri0s";
 var secret = "29X0lbFr6GvoJM8S";
 var oauth = new OAuth2(clientId, secret, "https://www.linkedin.com/", "uas/oauth2/authorization", "uas/oauth2/accessToken");
-// oauth.setTunnel({
-//   proxy: {
-//     host: '10.115.100.103',
-//     port: 8080
-//   }
-// });
+oauth.setTunnel({
+  proxy: {
+    host: '10.115.100.103',
+    port: 8080
+  }
+});
 
 // for demo purposes use one global access token
 // in production this has to be stored in a user session
