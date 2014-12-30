@@ -1,4 +1,4 @@
-node-linked-in [![NPM version](https://badge.fury.io/js/node-linked-in.png)](http://badge.fury.io/js/node-linked-in) [![Build Status](https://travis-ci.org/darul75/node-linked-in.png?branch=master)](https://travis-ci.org/darul75/node-linked-in) [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/node-linked-in/counters/views.png)](https://sourcegraph.com/github.com/darul75/node-linked-in)
+node-linked-in [![NPM version](https://badge.fury.io/js/node-linked-in.png)](http://badge.fury.io/js/node-linked-in)  [![Total views](https://sourcegraph.com/api/repos/github.com/darul75/node-linked-in/counters/views.png)](https://sourcegraph.com/github.com/darul75/node-linked-in)
 =============
 
 A Node.JS module, which provides an object oriented wrapper for the LinkedIn API.
