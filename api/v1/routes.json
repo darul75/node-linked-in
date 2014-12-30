@@ -531,7 +531,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -545,7 +545,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -622,7 +622,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },    
@@ -657,7 +657,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -672,7 +672,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -687,7 +687,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -719,7 +719,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -814,7 +814,7 @@
         "$event-type": null          
       }
     },
-    "add-shares": {
+    "add-share": {
       "url": "/companies/:company-id/shares",
       "doc-url": "https://developer.linkedin.com/documents/targeting-company-shares",
       "method": "POST",
@@ -825,7 +825,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": "See https://developer.linkedin.com/documents/groups-fields"
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -900,7 +900,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -915,7 +915,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -931,7 +931,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -979,7 +979,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }       
       }
     },
@@ -1009,7 +1009,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }       
       }
     },
@@ -1024,7 +1024,7 @@
           "required": false,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -1067,7 +1067,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -1120,7 +1120,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -1135,7 +1135,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     },
@@ -1149,7 +1149,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     }
@@ -1165,7 +1165,7 @@
           "required": true,
           "validation": "",
           "invalidmsg": "",
-          "description": ""
+          "description": "See https://developer.linkedin.com/documents/api-requests-json"
         }
       }
     }
