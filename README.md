@@ -59,8 +59,8 @@ linkedin.people.getCurrent({
 
 ```json
 proxy = {
-  port: 8083,
-  host: 127.0.0.1
+  "port": 8083,
+  "host": 127.0.0.1
 }
 ```
 
