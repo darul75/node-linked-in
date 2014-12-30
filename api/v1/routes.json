@@ -708,7 +708,7 @@
         "$url-field-selector": null
       }
     },
-   "post-comment": {
+   "add-post-comment": {
       "url": "/post/:post-id/comments",
       "doc-url": "https://developer.linkedin.com/documents/groups-api#comments",
       "method": "POST",
@@ -723,7 +723,7 @@
         }
       }
     },
-   "delete-comment": {
+   "remove-comment": {
       "url": "/comments/:comment-id",
       "doc-url": "https://developer.linkedin.com/documents/groups-api#comments",
       "method": "DELETE",
@@ -1139,10 +1139,10 @@
         }
       }
     },
-    "post-network-update": {
+    "add-network-update": {
       "url": "/people/~/person-activities",
       "doc-url": "https://developer.linkedin.com/documents/post-network-update",
-      "method": "PUT",
+      "method": "POST",
       "params": {        
         "data": {
           "type": "Json",
