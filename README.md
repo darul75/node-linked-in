@@ -46,9 +46,31 @@ linkedin.authenticate({
 
 // now you can play with API
 linkedin.people.getCurrent({
-  "url-field-selector": ':(id,first-name,last-name,industry,connections,group-memberships)'}, function(err, res) {
+  "url-field-selector": ':(id,first-name,last-name,industry)'}, 
+  function(err, res) {
   // current example retrieve current user profile info with specified fields
-});
+  });
+
+// PUT or POST methods use 'data' hash object
+// see here for details as first json level attribute is omitted
+// https://developer.linkedin.com/documents/api-requests-json
+
+linkedin.groups.addPost({ 
+  "group-id": "12435",
+  "data": {
+    "title": "test",
+    "summary": "summary",
+    "content": {
+      "submitted-url": "http",
+      "submitted-image-url": "http",
+      "title": "ti",
+      "description": "des"
+    }
+  },
+  function(err, res) {
+
+  });
+
 ```    
     
 ## Options    
