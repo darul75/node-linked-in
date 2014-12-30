@@ -119,7 +119,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/groups-api#profiledetails)
  **/
 /** section: linked
- *  groups#getMembershipDetail(msg, callback)
+ *  groups#getMembershipDetails(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -158,7 +158,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - group-id (String): Optional. Default. The group ID. Read-only. The ID is assigned automatically when the group is created.
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -172,7 +172,7 @@
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -289,7 +289,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - group-id (String): Optional. Default. The group ID. Read-only. The ID is assigned automatically when the group is created.
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -312,13 +312,12 @@
  * - Documentation [link](https://developer.linkedin.com/documents/groups-api#post)
  **/
 /** section: linked
- *  groups#getPostsComments(msg, callback)
+ *  groups#getPostComments(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - group-id (String): Optional. Default. The group ID. Read-only. The ID is assigned automatically when the group is created.
  *  - post-id (String): Required. The unique identifier for a post.
  *  - start (Number): Optional. Record index at which to start pagination. Validation rule: ` ^[0-9]+$ `.
  *  - count (Number): Optional. Number of records to return. Validation rule: ` ^[0-9]+$ `.
@@ -337,7 +336,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - post-id (String): Required. The unique identifier for a post.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -352,7 +351,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - post-id (String): Required. The unique identifier for a post.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -367,7 +366,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - post-id (String): Required. The unique identifier for a post.
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -404,14 +403,14 @@
  * - Documentation [link](https://developer.linkedin.com/documents/groups-api#comments)
  **/
 /** section: linked
- *  groups#postComment(msg, callback)
+ *  groups#addPostComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
  *  ##### Params on the `msg` object:
  * 
  *  - post-id (String): Required. The unique identifier for a post.
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -419,7 +418,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/groups-api#comments)
  **/
 /** section: linked
- *  groups#deleteComment(msg, callback)
+ *  groups#removeComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -572,14 +571,14 @@
  * - Documentation [link](https://developer.linkedin.com/reading-company-shares)
  **/
 /** section: linked
- *  company#addShares(msg, callback)
+ *  company#addShare(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
  *  ##### Params on the `msg` object:
  * 
  *  - company-id (String): Required. The unique internal numeric company identifier.
- *  - data (Json): Required. See https://developer.linkedin.com/documents/groups-fields
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -690,7 +689,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - update-key (String): Optional. Only needed if you want to fetch statistics for a specific company share.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -705,7 +704,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - update-key (String): Optional. Only needed if you want to fetch statistics for a specific company share.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -721,7 +720,7 @@
  * 
  *  - update-key (String): Optional. Only needed if you want to fetch statistics for a specific company share.
  *  - company-id (String): Required. The unique internal numeric company identifier.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -788,7 +787,7 @@
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -830,7 +829,7 @@
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -845,7 +844,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - partner-job-id (String): Optional. Unique ID for the job created by the partner (must be unique for each job posted).
- *  - data (Json): Optional.
+ *  - data (Json): Optional. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -901,7 +900,7 @@
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -979,7 +978,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - update-key (String): Optional. Only needed if you want to fetch statistics for a specific company share.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -994,7 +993,7 @@
  *  ##### Params on the `msg` object:
  * 
  *  - update-key (String): Optional. Only needed if you want to fetch statistics for a specific company share.
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -1002,13 +1001,13 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  share#postNetworkUpdate(msg, callback)
+ *  share#addNetworkUpdate(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 
@@ -1025,7 +1024,7 @@
  * 
  *  ##### Params on the `msg` object:
  * 
- *  - data (Json): Required.
+ *  - data (Json): Required. See https://developer.linkedin.com/documents/api-requests-json
  * 
  *  ##### See Also
  * 

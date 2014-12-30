@@ -31,8 +31,8 @@ it("should successfully execute GET /groups/:group-id (getDetail)",  function(ne
     );
 });
 
-it("should successfully execute GET /people/~/group-memberships/:group-id (getMembershipDetails)",  function(next) {
-    client.groups.getMembershipDetails(
+it("should successfully execute GET /people/~/group-memberships/:group-id (getMembershipDetail)",  function(next) {
+    client.groups.getMembershipDetail(
         {
                 "group-id": "String",
                 "url-field-selector": "String"
@@ -208,9 +208,10 @@ it("should successfully execute GET /posts/:post-id (getPost)",  function(next) 
     );
 });
 
-it("should successfully execute GET /posts/:post-id/comments (getPostComments)",  function(next) {
-    client.groups.getPostComments(
+it("should successfully execute GET /posts/:post-id/comments (getPostsComments)",  function(next) {
+    client.groups.getPostsComments(
         {
+                "group-id": "String",
                 "post-id": "String",
                 "start": "Number",
                 "count": "Number",
@@ -293,8 +294,8 @@ it("should successfully execute GET /comments/:comment-id (getComment)",  functi
     );
 });
 
-it("should successfully execute POST /post/:post-id/comments (addPostComment)",  function(next) {
-    client.groups.addPostComment(
+it("should successfully execute POST /post/:post-id/comments (postComment)",  function(next) {
+    client.groups.postComment(
         {
                 "post-id": "String",
                 "data": "Json"
@@ -307,8 +308,8 @@ it("should successfully execute POST /post/:post-id/comments (addPostComment)", 
     );
 });
 
-it("should successfully execute DELETE /comments/:comment-id (removeComment)",  function(next) {
-    client.groups.removeComment(
+it("should successfully execute DELETE /comments/:comment-id (deleteComment)",  function(next) {
+    client.groups.deleteComment(
         {
                 "comment-id": "String"
             },

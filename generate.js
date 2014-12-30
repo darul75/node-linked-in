@@ -5,7 +5,7 @@ var Fs = require("fs");
 var Path = require("path");
 
 var Optimist = require("optimist");
-var Util = require("./util");
+var Util = require("./lib/core/util");
 
 var TestSectionTpl = Fs.readFileSync(__dirname + "/templates/test_section.js.tpl", "utf8");
 var TestHandlerTpl = Fs.readFileSync(__dirname + "/templates/test_handler.js.tpl", "utf8");

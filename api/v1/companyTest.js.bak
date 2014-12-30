@@ -118,8 +118,8 @@ it("should successfully execute GET /companies/:company-id/updates/key=:company-
     );
 });
 
-it("should successfully execute POST /companies/:company-id/shares (addShare)",  function(next) {
-    client.company.addShare(
+it("should successfully execute POST /companies/:company-id/shares (addShares)",  function(next) {
+    client.company.addShares(
         {
                 "company-id": "String",
                 "data": "Json"

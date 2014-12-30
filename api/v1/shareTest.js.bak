@@ -115,8 +115,8 @@ it("should successfully execute PUT /people/~/network/updates/key=:update-key/is
     );
 });
 
-it("should successfully execute POST /people/~/person-activities (addNetworkUpdate)",  function(next) {
-    client.share.addNetworkUpdate(
+it("should successfully execute PUT /people/~/person-activities (postNetworkUpdate)",  function(next) {
+    client.share.postNetworkUpdate(
         {
                 "data": "Json"
             },
