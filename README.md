@@ -9,7 +9,7 @@ Because provided one is not friendly.
 
 ## API
 
-http://darul75.github.io/node-linked-in/
+http://darul75.github.io/node-linked-in/#Linkedin
 
 ## Install
 
