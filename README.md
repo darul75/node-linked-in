@@ -108,8 +108,8 @@ linkedin.communications
 * [Groups](https://developer.linkedin.com/documents/groups) - [doc](http://darul75.github.io/node-linked-in/#groups)
 * [Companies](https://developer.linkedin.com/documents/companies) - [doc](http://darul75.github.io/node-linked-in/#companies)
 * [Jobs](https://developer.linkedin.com/documents/jobs) - [doc](http://darul75.github.io/node-linked-in/#people)
-* [Share](https://developer.linkedin.com/documents/share-and-social-stream) [doc](http://darul75.github.io/node-linked-in/#shares)
-* [Communications](https://developer.linkedin.com/documents/communications) [doc](http://darul75.github.io/node-linked-in/#communications)
+* [Share](https://developer.linkedin.com/documents/share-and-social-stream) - [doc](http://darul75.github.io/node-linked-in/#shares)
+* [Communications](https://developer.linkedin.com/documents/communications) - [doc](http://darul75.github.io/node-linked-in/#communications)
 
 ## Metrics
 
