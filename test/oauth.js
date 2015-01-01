@@ -251,7 +251,7 @@ app.get('/groups', function (req, res) {
   
 });
 
-app.get('/company', function (req, res) {
+app.get('/companies', function (req, res) {
   var q = queue(1);
   var ignoreError = function (task, callback) {
     task(function(error, result) {
@@ -260,37 +260,37 @@ app.get('/company', function (req, res) {
   };
   
   var companyCurrent = function(cb) {
-    testFnTmpl(linkedin.company.all, {}, cb);    
+    testFnTmpl(linkedin.companies.all, {}, cb);    
   };
   var companyOneAndFields = function(cb) {
-    testFnTmpl(linkedin.company.get, {'company-id': 1337, 'url-field-selector': ':(id,name)'}, cb);    
+    testFnTmpl(linkedin.companies.get, {'company-id': 1337, 'url-field-selector': ':(id,name)'}, cb);    
   };
   var companyOne = function(cb) {
-    testFnTmpl(linkedin.company.get, {'company-id': 1337}, cb);    
+    testFnTmpl(linkedin.companies.get, {'company-id': 1337}, cb);    
   };
   var companyUniversalName = function(cb) {
-    testFnTmpl(linkedin.company.getByUniversalName, {"universal-name": 'linkedin'}, cb);    
+    testFnTmpl(linkedin.companies.getByUniversalName, {"universal-name": 'linkedin'}, cb);    
   };
   var companyEmailDomain = function(cb) {
-    testFnTmpl(linkedin.company.getByEmailDomain, {"email-domain": 'linkedin.com'}, cb);    
+    testFnTmpl(linkedin.companies.getByEmailDomain, {"email-domain": 'linkedin.com'}, cb);    
   };
   var companyCurrentIsAdmin = function(cb) {
-    testFnTmpl(linkedin.company.all, {'is-company-admin': true}, cb);    
+    testFnTmpl(linkedin.companies.all, {'is-company-admin': true}, cb);    
   };
   var companyMixed = function(cb) {
-    testFnTmpl(linkedin.company.all, {'url-field-selector': '::(162479,universal-name=linkedin)'}, cb);    
+    testFnTmpl(linkedin.companies.all, {'url-field-selector': '::(162479,universal-name=linkedin)'}, cb);    
   };
   var companyOneUpdate = function(cb) {
-    testFnTmpl(linkedin.company.getUpdate, {'company-id': 1337}, cb);    
+    testFnTmpl(linkedin.companies.getUpdate, {'company-id': 1337}, cb);    
   };
   var companyOneUpdatePagination = function(cb) {
-    testFnTmpl(linkedin.company.getUpdate, {'company-id': 1337, "start":0, "count":5}, cb);    
+    testFnTmpl(linkedin.companies.getUpdate, {'company-id': 1337, "start":0, "count":5}, cb);    
   };
   var companyOneUpdateEventType = function(cb) {
-    testFnTmpl(linkedin.company.getUpdate, {'company-id': 1337,'event-type': 'status-update'}, cb);    
+    testFnTmpl(linkedin.companies.getUpdate, {'company-id': 1337,'event-type': 'status-update'}, cb);    
   };
   var companyOneUpdateComments = function(cb) {
-    testFnTmpl(linkedin.company.getUpdate, {'company-id': 1337,'company-update-key': 'UPDATE-c162479-5953413562058702849',
+    testFnTmpl(linkedin.companies.getUpdate, {'company-id': 1337,'company-update-key': 'UPDATE-c162479-5953413562058702849',
       'event-type': 'CMPY'}, cb);    
   };
   q.defer(ignoreError, companyCurrent);

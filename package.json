@@ -1,6 +1,6 @@
 {
     "name" : "node-linked-in",
-    "version" : "0.0.4",
+    "version" : "0.0.5",
     "description" : "NodeJS wrapper for the LinkedIn API",
     "author": "Julien Valéry <darul75@gmail.com>",
     "contributors": [        

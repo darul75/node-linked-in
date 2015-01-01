@@ -460,10 +460,10 @@
  * - Documentation [link](https://developer.linkedin.com/documents/groups-api#suggestgroups)
  **/
 /** section: linked
- * mixin company
+ * mixin companies
  **/
 /** section: linked
- *  company#all(msg, callback)
+ *  companies#all(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -480,7 +480,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/company-lookup-api-and-fields)
  **/
 /** section: linked
- *  company#get(msg, callback)
+ *  companies#get(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -494,7 +494,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/company-lookup-api-and-fields)
  **/
 /** section: linked
- *  company#getByUniversalName(msg, callback)
+ *  companies#getByUniversalName(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -508,7 +508,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/company-lookup-api-and-fields)
  **/
 /** section: linked
- *  company#getByEmailDomain(msg, callback)
+ *  companies#getByEmailDomain(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -522,7 +522,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/company-lookup-api-and-fields)
  **/
 /** section: linked
- *  company#getUpdate(msg, callback)
+ *  companies#getUpdate(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -539,7 +539,7 @@
  * - Documentation [link](https://developer.linkedin.com/reading-company-shares)
  **/
 /** section: linked
- *  company#getUpdateComments(msg, callback)
+ *  companies#getUpdateComments(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -555,7 +555,7 @@
  * - Documentation [link](https://developer.linkedin.com/reading-company-shares)
  **/
 /** section: linked
- *  company#getUpdateCommentsLike(msg, callback)
+ *  companies#getUpdateCommentsLike(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -571,7 +571,7 @@
  * - Documentation [link](https://developer.linkedin.com/reading-company-shares)
  **/
 /** section: linked
- *  company#addShare(msg, callback)
+ *  companies#addShare(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -586,7 +586,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/targeting-company-shares)
  **/
 /** section: linked
- *  company#getShareEnabled(msg, callback)
+ *  companies#getShareEnabled(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -600,7 +600,7 @@
  * - Documentation [link](https://developer.linkedin.com/creating-company-shares)
  **/
 /** section: linked
- *  company#getCurrentShareEnabled(msg, callback)
+ *  companies#getCurrentShareEnabled(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -614,7 +614,7 @@
  * - Documentation [link](https://developer.linkedin.com/creating-company-shares)
  **/
 /** section: linked
- *  company#getHistoricalFollowersStatistics(msg, callback)
+ *  companies#getHistoricalFollowersStatistics(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -631,7 +631,7 @@
  * - Documentation [link](https://developer.linkedin.com/historical-company-statistics)
  **/
 /** section: linked
- *  company#getHistoricalStatusUpdate(msg, callback)
+ *  companies#getHistoricalStatusUpdate(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -650,7 +650,7 @@
  * - Documentation [link](https://developer.linkedin.com/historical-company-statistics)
  **/
 /** section: linked
- *  company#getStatistics(msg, callback)
+ *  companies#getStatistics(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -664,7 +664,7 @@
  * - Documentation [link](https://developer.linkedin.com/company-statistics)
  **/
 /** section: linked
- *  company#getNumFollowers(msg, callback)
+ *  companies#getNumFollowers(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -682,7 +682,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/targeting-company-shares)
  **/
 /** section: linked
- *  company#addShareComment(msg, callback)
+ *  companies#addShareComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -697,7 +697,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  company#likeShareComment(msg, callback)
+ *  companies#likeShareComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -712,7 +712,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  company#addUpdateComment(msg, callback)
+ *  companies#addUpdateComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -728,7 +728,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  company#search(msg, callback)
+ *  companies#search(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -891,10 +891,10 @@
  * - Documentation [link](https://developer.linkedin.com/documents/job-search-api)
  **/
 /** section: linked
- * mixin share
+ * mixin shares
  **/
 /** section: linked
- *  share#add(msg, callback)
+ *  shares#add(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -908,7 +908,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/share-api)
  **/
 /** section: linked
- *  share#getNetworksUpdates(msg, callback)
+ *  shares#getNetworksUpdates(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -929,7 +929,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/get-network-updates-and-statistics-api)
  **/
 /** section: linked
- *  share#getNetworksStats(msg, callback)
+ *  shares#getNetworksStats(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -943,7 +943,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/get-network-updates-and-statistics-api)
  **/
 /** section: linked
- *  share#getNetworksUpdatesComments(msg, callback)
+ *  shares#getNetworksUpdatesComments(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -957,7 +957,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-reading-comments-and-likes-network-updates)
  **/
 /** section: linked
- *  share#getNetworksUpdatesLike(msg, callback)
+ *  shares#getNetworksUpdatesLike(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -971,7 +971,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-reading-comments-and-likes-network-updates)
  **/
 /** section: linked
- *  share#addShareComment(msg, callback)
+ *  shares#addShareComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -986,7 +986,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  share#likeShareComment(msg, callback)
+ *  shares#likeShareComment(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 
@@ -1001,7 +1001,7 @@
  * - Documentation [link](https://developer.linkedin.com/documents/commenting-and-liking-company-share)
  **/
 /** section: linked
- *  share#addNetworkUpdate(msg, callback)
+ *  shares#addNetworkUpdate(msg, callback)
  *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
  *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
  * 

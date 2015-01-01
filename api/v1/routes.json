@@ -2,7 +2,7 @@
   "defines": {
     "constants": {
       "name": "Linkedin",
-      "description": "A Node.JS module, which provides an object oriented wrapper for the Linked API.",
+      "description": "A Node.JS module, which provides an object oriented wrapper for the LinkedIn API.",
       "protocol": "https",
       "host": "api.linkedin.com",
       "port": 443,
@@ -747,7 +747,7 @@
       }
     }  
   },
-  "company": {
+  "companies": {
     "all": {
       "url": "/companies",
       "doc-url": "https://developer.linkedin.com/documents/company-lookup-api-and-fields",
@@ -1056,7 +1056,7 @@
       }
     }
   },
-  "share": {
+  "shares": {
     "add": {            
       "url": "/people/~/shares",
       "doc-url": "https://developer.linkedin.com/documents/share-api",
