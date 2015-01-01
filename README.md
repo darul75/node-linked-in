@@ -88,6 +88,20 @@ proxy = {
 
 Whether process.env.HTTPS_PROXY or process.env.HTTP_PROXY are set, providing hash proxy is not needed.
 
+## Namespaces
+
+```javascript
+var linkedin = new Linkedin(cfg);
+
+// following namespaces expose methods for each linked api features
+linkedin.people
+linkedin.groups
+linkedin.companies
+linkedin.jobs
+linkedin.shares
+linkedin.communications
+```
+
 ## Implemented APIs
 
 * [People](https://developer.linkedin.com/documents/people) 100%
