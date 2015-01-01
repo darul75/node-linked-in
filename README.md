@@ -104,12 +104,12 @@ linkedin.communications
 
 ## Implemented APIs
 
-* [People](https://developer.linkedin.com/documents/people) 100%
-* [Groups](https://developer.linkedin.com/documents/groups) 100%
-* [Companies](https://developer.linkedin.com/documents/companies) 100%
-* [Jobs](https://developer.linkedin.com/documents/jobs) 100%
-* [Share](https://developer.linkedin.com/documents/share-and-social-stream) 100%
-* [Communications](https://developer.linkedin.com/documents/communications) 100%
+* [People](https://developer.linkedin.com/documents/people) - [doc](http://darul75.github.io/node-linked-in/#people)
+* [Groups](https://developer.linkedin.com/documents/groups) - [doc](http://darul75.github.io/node-linked-in/#groups)
+* [Companies](https://developer.linkedin.com/documents/companies) - [doc](http://darul75.github.io/node-linked-in/#companies)
+* [Jobs](https://developer.linkedin.com/documents/jobs) - [doc](http://darul75.github.io/node-linked-in/#people)
+* [Share](https://developer.linkedin.com/documents/share-and-social-stream) [doc](http://darul75.github.io/node-linked-in/#shares)
+* [Communications](https://developer.linkedin.com/documents/communications) [doc](http://darul75.github.io/node-linked-in/#communications)
 
 ## Metrics
 
