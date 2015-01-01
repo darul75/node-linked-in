@@ -5,7 +5,7 @@ A Node.JS module, which provides an object oriented wrapper for the LinkedIn API
 
 ## Why ?
 
-Because ecchymose in the nose. I needed something but on server side.
+Because provided one is not friendly.
 
 ## API
 
@@ -87,6 +87,15 @@ proxy = {
 ```
 
 Whether process.env.HTTPS_PROXY or process.env.HTTP_PROXY are set, providing hash proxy is not needed.
+
+## Implemented APIs
+
+* [People](https://developer.linkedin.com/documents/people) 100%
+* [Groups](https://developer.linkedin.com/documents/groups) 100%
+* [Companies](https://developer.linkedin.com/documents/companies) 100%
+* [Jobs](https://developer.linkedin.com/documents/jobs) 100%
+* [Share](https://developer.linkedin.com/documents/share-and-social-stream) 100%
+* [Communications](https://developer.linkedin.com/documents/communications) 100%
 
 ## Metrics
 
