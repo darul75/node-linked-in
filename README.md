@@ -22,12 +22,10 @@ npm install node-linked-in
 ```javascript
 var Linkedin = require('node-linked-in');
 
-var cfg = {version: "1", pathPrefix:"v1"};
+var cfg = {};
 
 /* proxy example
-var config = {
-  version: "1",
-  pathPrefix:"v1",
+var config = {  
   proxy: {
     host: 127.0.0.1,
     port: 8083
@@ -35,6 +33,8 @@ var config = {
 }*/
 
 var linkedin = new Linkedin(cfg);
+// or no specific
+// var linkedin = new Linkedin();
 
 // Oauth2 auth, yoy might use https://github.com/ciaranj/node-oauth
 
@@ -75,9 +75,10 @@ linkedin.groups.addPost({
     
 ## Options    
 
-- **version** : 1 only. TODO: set it by default
-- **pathPrefix** : v1 only. TODO: set it by default
+- **version** : 1 only. default
+- **pathPrefix** : v1 only. default
 - **proxy**: hash object
+- **debug**: debug trace mode
 
 ```json
 proxy = {
