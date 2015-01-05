@@ -36,11 +36,10 @@ var linkedin = new Linkedin(cfg);
 // or no specific
 // var linkedin = new Linkedin();
 
-// Oauth2 auth, yoy might use https://github.com/ciaranj/node-oauth
+// Oauth2 auth token, you might use https://github.com/ciaranj/node-oauth
 
 // store info
 linkedin.authenticate({
-  type: "oauth",
   token: accessToken
 });
 
