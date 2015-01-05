@@ -75,8 +75,6 @@ linkedin.groups.addPost({
     
 ## Options    
 
-- **version** : 1 only. default
-- **pathPrefix** : v1 only. default
 - **proxy**: hash object
 - **debug**: debug trace mode
 

@@ -74,8 +74,7 @@ app.get(/^\/linked-callback\/?$/, function (req, res) {
       }
       accessToken = access_token;
       // authenticate linkedin API
-      linkedin.authenticate({
-        type: "oauth",
+      linkedin.authenticate({        
         token: accessToken
       });
       res.send(200);    
