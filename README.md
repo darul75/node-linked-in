@@ -49,6 +49,9 @@ linkedin.people.getCurrent({
   function(err, res) {
   // current example retrieve current user profile info with specified fields
   });
+  
+// "url-field-selector" is specific to LinkedIn API, see here for more details of syntax:
+// https://developer.linkedin.com/documents/understanding-field-selectors  
 
 // PUT or POST methods use 'data' hash object
 // see here for details as first json level attribute is omitted
