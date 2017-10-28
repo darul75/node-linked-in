@@ -922,7 +922,7 @@
     "add-update-comment": {
       "url": "/companies/:company-id/updates/key=:update-key/update-comments-as-company/",
       "doc-url": "https://developer.linkedin.com/documents/commenting-and-liking-company-share",
-      "method": "PUT",
+      "method": "POST",
       "params": {
         "$update-key": null,
         "$company-id": null,
